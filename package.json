@@ -1,0 +1,16 @@
+{
+  "name": "market-brief",
+  "version": "1.0.0",
+  "description": "모닝 마켓 브리프: 매일 아침 자동 발행되는 증시 브리핑 블로그",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "BASE_PATH= node scripts/build.mjs && node scripts/serve.mjs",
+    "publish": "node scripts/publish.mjs"
+  },
+  "type": "module",
+  "dependencies": {
+    "marked": "^15.0.12"
+  },
+  "private": true
+}
